@@ -11,11 +11,11 @@ int main()
 		int mid = left + right / 2;
 		if (arr[mid] > m)
 		{
-			right = sz - 1;
+			right = mid - 1;
 		}
 		else if (arr[mid] < m)
 		{
-			left = sz + 1;
+			left = mid + 1;
 		}
 		else
 		{
