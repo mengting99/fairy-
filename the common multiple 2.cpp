@@ -1,0 +1,18 @@
+﻿#include <stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf_s("%d %d", &a, &b);
+	int i = 1;
+	for (i = 1; i <= a * b; i++)
+	{
+		if (i % a == 0 && i % b == 0)
+		{
+			printf("the least common multiple is %d", i);
+			break;
+		}
+	}
+		return 0;
+	}
+
